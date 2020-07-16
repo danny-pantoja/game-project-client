@@ -1,6 +1,6 @@
 'use strict'
 
-const store = require('./store')
+const store = require('git./store')
 
 const signUpSuccess = function () {
   $('#message').text('Successfully signed up!')
