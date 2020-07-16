@@ -7,3 +7,4 @@ TIC-TAC-TOE game. Here we're going to build our own version of TIC-TAC-TOE using
 1. All content is licensed under a CC­BY­NC­SA 4.0 license.
 1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
+#game-project-client
