@@ -9,8 +9,16 @@ const signUpFailure = function () {
   $('#message').text('Sign up Fail!')
 }
 
-module.exports = {
+const signInSuccess = function () {
+  $('#message').text('Successfully signed in!')
+}
+const signInFailure = function () {
+  $('#message').text('Sign in Fail, Please Try Again!')
+}
 
+module.exports = {
   signUpSuccess,
-  signUpFailure
+  signUpFailure,
+  signInSuccess,
+  signInFailure
 }
