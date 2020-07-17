@@ -1,4 +1,4 @@
-curl --include --request POST "http://localhost:4741" \
+curl --include --request POST "https://tic-tac-toe-api-development.herokuapp.com/sign-up" \
   --header "Content-Type: application/json" \
   --data '{
     "credentials": {
@@ -10,7 +10,7 @@ curl --include --request POST "http://localhost:4741" \
 
 echo
 
-curl --include --request POST "https://tic-tac-toe-api-production.herokuapp.com" \
+curl --include --request POST "https://tic-tac-toe-api-production.herokuapp.com/sign-up" \
   --header "Content-Type: application/json" \
   --data '{
     "credentials": {
