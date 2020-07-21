@@ -14,8 +14,9 @@
     <body>
       <h1>Danny's TIC TAC TOE</h1>
 
+     <p id="message"></p>
+
      <div id="unauthenticated">
-       <p id="message"></p>
       <form id="sign-up">
               <input name="credentials[email]" placeholder="email here" type="text">
               <input name="credentials[password]" placeholder="password" type="password">
@@ -28,6 +29,35 @@
             <input name="credentials[password]" placeholder="password" type="password">
             <button type="submit">Sign In To Play!</button>
       </form>
-     </div>
+    </div>
+
+    <div id="authenticated">
+      <form id="change-password">
+        <input name="passwords[old]" placeholder="old password" type="password">
+        <input name="passwords[new]" placeholder="new password" type="password">
+       <button type="submit">Change password</button>
+      </form>
+
+      <form id="sign-out">
+        <button type="submit">Sign out</button>
+      </form>
+    </div>
+
+    <section class='container'>
+    <div class='row h-100 board'>
+    <div class='col-4 box'></div>
+    <div class='col-4 box'></div>
+    <div class='col-4 box'></div>
+
+    <div class='col-4 box'></div>
+    <div class='col-4 box'></div>
+    <div class='col-4 box'></div>
+
+    <div class='col-4 box'></div>
+    <div class='col-4 box'></div>
+    <div class='col-4 box'></div>
+    </div>
+    </section>
+
     </body>
 </html>

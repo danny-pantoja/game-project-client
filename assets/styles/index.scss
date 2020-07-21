@@ -1,1 +1,42 @@
 @import '~bootstrap/scss/bootstrap';
+
+.container {
+  height: 100vh;
+}
+
+.board {
+  margin: auto;
+  max-height: calc(100vh - 75px);
+  max-width: calc(100vh - 75px);
+  // images
+  background: url('public/cat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  &:nth-child(3n) {
+    border-right: 0;
+  }
+
+  &:nth-last-child(-1n + 3) {
+    border-bottom: 0;
+  }
+
+  min-height: calc(100 / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: white;
+  font-size: 15vh;
+  // 3d effect
+  text-shadow: 2px 2px rgba(0, 0, 0, .25);
+  &:hover {
+    background-color: LightSkyBlue;
+   }
+  user-select: none;
+  }

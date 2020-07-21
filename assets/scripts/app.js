@@ -11,4 +11,15 @@ $(() => {
   // your JS code goes here
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)
+  $('#change-password').on('submit', authEvents.onChangePassword)
+  $('#sign-out').on('submit', authEvents.onSignOut)
+
+  let currentPlayer = '✕'
+  const onBoxClick = (event) => {
+    console.log('click')
+    const box = $(event.target)
+    box.css('background', 'transparent').text(currentPlayer)
+    currentPlayer = currentPlayer === 'O' ? '✕' : 'O'
+  }
+  $('.box').on('click', onBoxClick)
 })
