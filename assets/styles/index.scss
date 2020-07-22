@@ -1,7 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 .container {
-  height: 100vh;
+  height: 75vh;
 }
 
 .board {
@@ -31,12 +31,12 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  color: white;
-  font-size: 15vh;
+  color: green;
+  font-size: 10vh;
   // 3d effect
   text-shadow: 2px 2px rgba(0, 0, 0, .25);
   &:hover {
-    background-color: LightSkyBlue;
+    background-color: LightOrange;
    }
   user-select: none;
   }

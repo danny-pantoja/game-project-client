@@ -16,7 +16,7 @@ $(() => {
 
   let currentPlayer = '✕'
   const onBoxClick = (event) => {
-    console.log('click')
+    // console.log('click')
     const box = $(event.target)
     box.css('background', 'transparent').text(currentPlayer)
     currentPlayer = currentPlayer === 'O' ? '✕' : 'O'
